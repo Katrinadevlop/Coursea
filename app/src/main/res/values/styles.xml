@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item> <!-- Основной цвет -->
+    </style>
+
+    <style name="CustomButtonStyle">
+        <item name="android:background">@drawable/circle_button</item>
+        <item name="android:textColor">#EF8E65</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>
+
