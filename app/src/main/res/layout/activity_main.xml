@@ -20,7 +20,8 @@
         app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:fontFamily="@font/Roboto"/>
 
     <Button
         android:id="@+id/button"
@@ -37,6 +38,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#EF8E65"
         app:strokeWidth="2dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:fontFamily="@font/Roboto"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
