@@ -8,7 +8,12 @@
     android:backgroundTintMode="src_in"
     tools:context=".MainActivity">
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/СonstraintLayouts">
     <Button
+        android:id="@+id/registration"
         android:layout_width="150dp"
         android:layout_height="52dp"
         android:layout_marginHorizontal="30dp"
@@ -18,12 +23,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.52"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/entrance"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/entrance"
         android:layout_width="150dp"
         android:layout_height="52dp"
         android:layout_marginHorizontal="29dp"
@@ -38,5 +43,5 @@
         app:strokeColor="#EF8E65"
         app:strokeWidth="2dp"
         tools:ignore="MissingConstraints" />
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
