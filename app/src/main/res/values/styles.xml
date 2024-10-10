@@ -9,5 +9,28 @@
         <item name="android:textColor">#EF8E65</item>
         <item name="android:textAllCaps">true</item>
     </style>
+
+    <style name="EditTextAndButton">
+        <item name="android:layout_width">343dp</item>
+        <item name="android:layout_height">52dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+    </style>
+
+    <style name="TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">60dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:fontFamily">@font/comfortaa</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="ButtonCapsText">
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
 </resources>
 
