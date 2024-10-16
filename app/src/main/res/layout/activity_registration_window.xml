@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:id="@+id/registrationLayout"
     android:background="@color/white"
     android:layout_height="match_parent">
 
@@ -32,7 +33,7 @@
         android:id="@+id/button2"
         style="@style/EditTextAndButton"
         android:backgroundTint="#EF8E65"
-        android:text="@string/text_entry"
+        android:text="@string/registration_text"
         android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
