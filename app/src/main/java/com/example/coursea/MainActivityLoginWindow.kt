@@ -2,6 +2,7 @@ package com.example.coursea
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -34,10 +35,11 @@ class MainActivityLoginWindow : AppCompatActivity() {
         val emailField = findViewById<EditText>(R.id.editTextEmailAddress)
         val passwordField = findViewById<EditText>(R.id.editTextPassword)
         val button = findViewById<Button>(R.id.button2)
-        button.setOnClickListener {
+        /*button.setOnClickListener {
             val db = DBHelper(this, null)
             val inputEmail = emailField.text.toString()
             val inputPassword = passwordField.text.toString()
+            val email = intent.getStringExtra("USER_EMAIL")
 
             if (inputEmail.isNotEmpty() && inputPassword.isNotEmpty()) {
                 val cursor = db.getData()
@@ -57,6 +59,20 @@ class MainActivityLoginWindow : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Заполните все поля", Toast.LENGTH_LONG).show()
             }
+        }*/
+
+        button.setOnClickListener {
+            val email = intent.getStringExtra("USER_EMAIL")
+            emailField.append("Почта: $email\n")
+
+            val url = "https://www.google.ru/"
+            val intent = Intent(Intent.ACTION_VIEW).apply {
+                data = Uri.parse(url)
+            }
+            startActivity(intent)
+
+
+
         }
     }
 }

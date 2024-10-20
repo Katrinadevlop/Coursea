@@ -45,6 +45,10 @@ class ActivityRegistrationWindow : AppCompatActivity() {
 
                 emailField.text.clear()
                 passwordField.text.clear()
+
+                val intent = Intent(this, MainActivityLoginWindow::class.java)
+                intent.putExtra("USER_EMAIL", email)
+                startActivity(intent)
             }else{
                 Toast.makeText(this, "Заполните все поля", Toast.LENGTH_LONG).show()
             }
