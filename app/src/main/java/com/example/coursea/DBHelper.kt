@@ -36,6 +36,16 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         return db.rawQuery("SELECT * FROM " + TABLE_NAME, null)
     }
 
+    fun isUserRegistered(email:String, password: String):Boolean{
+        val db = this.readableDatabase
+        val query = "SELECT * FROM person_table WHERE email = ? AND password = ?"
+        val cursor = db.rawQuery(query, arrayOf(email, password))
+
+        val isRegistered = cursor.count > 0
+        cursor.close()
+        return isRegistered
+    }
+
     companion object{
         private val DATABASE_NAME = "Coursea_Data"
         private val DATABASE_VERSION = 1

@@ -13,7 +13,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import kotlinx.coroutines.flow.DEFAULT_CONCURRENCY
 
-class MainActivityLoginWindow : AppCompatActivity() {
+class /**/MainActivityLoginWindow : AppCompatActivity() {
     @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,8 +45,10 @@ class MainActivityLoginWindow : AppCompatActivity() {
                 if (cursor != null && cursor.moveToFirst()) {
                     val dbPassword = cursor.getString(cursor.getColumnIndex(DBHelper.PASSWORD_COL))
 
-                    if (dbPassword == inputPassword) {
+                    if (db.isUserRegistered(inputEmail, inputPassword)) {
                         Toast.makeText(this, dbPassword.toString() + "Вход выполнен успешно", Toast.LENGTH_LONG).show()
+                        val intent = Intent(this, CoursesActivity::class.java)
+                        startActivity(intent)
                     } else {
                         Toast.makeText(this, dbPassword.toString() + "Неверный пароль", Toast.LENGTH_LONG).show()
                     }

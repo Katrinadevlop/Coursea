@@ -40,7 +40,6 @@ class ActivityRegistrationWindow : AppCompatActivity() {
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 db.addData(email, password)
-                Toast.makeText(this, email + " " + password, Toast.LENGTH_LONG).show()
                 Toast.makeText(this, "Регистрация успешна", Toast.LENGTH_LONG).show()
 
                 emailField.text.clear()

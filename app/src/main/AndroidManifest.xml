@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Coursea"
         tools:targetApi="31">
         <activity
+            android:name=".CoursesActivity"
+            android:exported="false" />
+        <activity
             android:name=".ActivityRegistrationWindow"
             android:exported="false" />
         <activity
