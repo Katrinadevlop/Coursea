@@ -186,6 +186,23 @@
                     android:src="@drawable/c_harp" />
             </androidx.cardview.widget.CardView>
 
+            <FrameLayout
+                android:id="@+id/adContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" >
+
+                <com.yandex.mobile.ads.banner.BannerAdView
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/searchView" />
+            </FrameLayout>
         </LinearLayout>
     </ScrollView>
 

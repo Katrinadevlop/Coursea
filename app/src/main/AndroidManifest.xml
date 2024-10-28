@@ -18,6 +18,9 @@
             android:name=".CoursesActivity"
             android:exported="false" />
         <activity
+            android:name=".ActivityMainPageCourses"
+            android:exported="false" />
+        <activity
             android:name=".ActivityRegistrationWindow"
             android:exported="false" />
         <activity
@@ -36,6 +39,11 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION"
+            android:value="false" />
+
     </application>
 
 </manifest>
