@@ -15,16 +15,22 @@
         android:theme="@style/Theme.Coursea"
         tools:targetApi="31">
         <activity
-            android:name=".CoursesActivity"
+            android:name=".ActivityChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityPasswordRecovery"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityCourses"
             android:exported="false" />
         <activity
             android:name=".ActivityMainPageCourses"
             android:exported="false" />
         <activity
-            android:name=".ActivityRegistrationWindow"
+            android:name=".ActivityRegistration"
             android:exported="false" />
         <activity
-            android:name=".MainActivityLoginWindow"
+            android:name=".ActivityLogin"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -39,11 +45,9 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
         <meta-data
             android:name="com.yandex.mobile.ads.AUTOMATIC_SDK_INITIALIZATION"
             android:value="false" />
-
     </application>
 
 </manifest>
