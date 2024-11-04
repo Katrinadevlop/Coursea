@@ -7,16 +7,13 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
-import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.google.android.gms.common.AccountPicker
-import kotlinx.coroutines.flow.DEFAULT_CONCURRENCY
 
-class /**/MainActivityLoginWindow : AppCompatActivity() {
+class /**/ActivityLogin : AppCompatActivity() {
     @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +47,7 @@ class /**/MainActivityLoginWindow : AppCompatActivity() {
 
                     if (db.isUserRegistered(inputEmail, inputPassword)) {
                         Toast.makeText(this, dbPassword.toString() + "Вход выполнен успешно", Toast.LENGTH_LONG).show()
-                        val intent = Intent(this, CoursesActivity::class.java)
+                        val intent = Intent(this, ActivityCourses::class.java)
                         startActivity(intent)
                     } else {
                         Toast.makeText(this, dbPassword.toString() + "Неверный пароль", Toast.LENGTH_LONG).show()
@@ -66,7 +63,7 @@ class /**/MainActivityLoginWindow : AppCompatActivity() {
     }
 
     fun ForgotPasswordAnimation(v:View){
-        val intent = Intent(this, ActivityRegistrationWindow::class.java)
+        val intent = Intent(this, ActivityPasswordRecovery::class.java)
         startActivity(intent)
     }
 }
