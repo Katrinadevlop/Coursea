@@ -3,9 +3,11 @@ package com.example.coursea
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -61,24 +63,10 @@ class /**/MainActivityLoginWindow : AppCompatActivity() {
                 Toast.makeText(this, "Заполните все поля", Toast.LENGTH_LONG).show()
             }
         }
+    }
 
-        val googleButton = findViewById<Button>(R.id.sign_in_button)
-        googleButton.setOnClickListener {
-            val intent = AccountPicker.newChooseAccountIntent(
-                null,
-                null,
-                arrayOf("com.google"),
-                false,
-                null,
-                null,
-                null,
-                null);
-            startActivityForResult(intent, 123);
-        }
-
-        val G_PLUS_SCOPE = "oauth2:https://www.googleapis.com/auth/plus.me";
-        val USERINFO_SCOPE = "https://www.googleapis.com/auth/userinfo.profile";
-        val EMAIL_SCOPE = "https://www.googleapis.com/auth/userinfo.email";
-        val SCOPES = G_PLUS_SCOPE + " " + USERINFO_SCOPE + " " + EMAIL_SCOPE;
+    fun ForgotPasswordAnimation(v:View){
+        val intent = Intent(this, ActivityRegistrationWindow::class.java)
+        startActivity(intent)
     }
 }

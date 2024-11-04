@@ -11,8 +11,38 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coursea"
+            android:fontFamily="@font/comfortaa"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,27 +52,26 @@
 
         <Button
             android:id="@+id/entrance"
-            android:layout_width="150dp"
+            android:layout_width="170dp"
             android:layout_height="52dp"
-            android:layout_marginEnd="16dp"
             android:backgroundTint="@color/white"
             android:text="@string/entry"
             android:textAllCaps="true"
             android:textColor="#EF8E65"
-            android:layout_marginStart="32dp"
+            android:fontFamily="@font/comfortaa"
             android:layout_gravity="center"
             app:strokeColor="#EF8E65"
             app:strokeWidth="2dp" />
 
         <Button
             android:id="@+id/registration"
-            android:layout_width="150dp"
+            android:layout_width="170dp"
             android:layout_height="52dp"
-            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
             android:backgroundTint="#EF8E65"
             android:text="@string/registration_text"
             android:textAllCaps="true"
-            android:layout_marginEnd="32dp"
+            android:fontFamily="@font/comfortaa"
             android:layout_gravity="center"
             app:layout_constraintHorizontal_bias="0.5" />
     </LinearLayout>
