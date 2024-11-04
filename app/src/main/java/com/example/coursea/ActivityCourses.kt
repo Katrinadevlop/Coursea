@@ -15,7 +15,7 @@ import com.yandex.mobile.ads.common.AdRequestError
 import com.yandex.mobile.ads.common.ImpressionData
 import com.yandex.mobile.ads.common.MobileAds
 
-class CoursesActivity : AppCompatActivity() {
+class ActivityCourses : AppCompatActivity() {
     private var bannerAd: BannerAdView? = null
     private lateinit var adContainerView: FrameLayout
 

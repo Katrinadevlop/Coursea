@@ -1,16 +1,9 @@
 package com.example.coursea
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
-import android.widget.FrameLayout
-import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.constraintlayout.widget.ConstraintSet.Layout
-import androidx.fragment.app.Fragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -24,12 +17,12 @@ class MainActivity : AppCompatActivity() {
         buttonEntrance = findViewById(R.id.entrance)
 
         buttonEntrance.setOnClickListener(){
-            val intent = Intent(this, MainActivityLoginWindow::class.java)
+            val intent = Intent(this, ActivityLogin::class.java)
             startActivity(intent)
         }
 
         buttonRegistration.setOnClickListener(){
-            val intent = Intent(this, ActivityRegistrationWindow::class.java)
+            val intent = Intent(this, ActivityRegistration::class.java)
             startActivity(intent)
         }
     }

@@ -24,6 +24,7 @@
         android:id="@+id/textView"
         style="@style/TextView"
         android:layout_marginEnd="102dp"
+        android:fontFamily="@font/comfortaa"
         android:text="@string/registration_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,6 +34,7 @@
         android:id="@+id/button2"
         style="@style/EditTextAndButton"
         android:backgroundTint="#EF8E65"
+        android:fontFamily="@font/roboto_bold"
         android:text="@string/registration_text"
         android:textAllCaps="true"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,6 +46,8 @@
         style="@style/EditTextAndButton"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:hint="Почта"
+        android:fontFamily="@font/comfortaa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -53,7 +57,21 @@
         style="@style/EditTextAndButton"
         android:ems="10"
         android:inputType="textPassword"
+        android:hint="Пароль"
+        android:fontFamily="@font/comfortaa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmailAddress" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="344dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
